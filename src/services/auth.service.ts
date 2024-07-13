@@ -44,7 +44,7 @@ class AuthService {
   async getProfile(): Promise<IUser> {
     const token = localStorage.getItem("token");
 
-    const response = await fetch(`${API_URL}/auth/login`, {
+    const response = await fetch(`${API_URL}/auth/profile`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
