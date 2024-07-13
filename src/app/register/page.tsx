@@ -10,7 +10,7 @@ const RegisterPage = () => {
     <div className="flex min-h-screen items-center justify-center bg-neutral-950">
       <div className="bg-neutral-900 p-8 rounded-lg shadow-md">
         <h1 className="font-semibold mb-4">Register</h1>
-        <AuthForm />
+        <AuthForm isLogin={false} />
       </div>
     </div>
   );
