@@ -43,10 +43,7 @@ export const Home = () => {
       ) : data ? (
         <CardItem content={data.name} title={data.email} key={data.id} />
       ) : (
-        <CardItem
-          content="Find in-depth information about Next.js features and API."
-          title="Login"
-        />
+        <CardItem content="Failed to login. Try again later." title="Login" />
       )}
     </main>
   );
